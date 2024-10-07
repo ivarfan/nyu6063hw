@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "mysite-dev7.us-east-1.elasticbeanstalk.com",
+    '127.0.0.1',
+    'localhost',
 ]
 
 
