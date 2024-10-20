@@ -1,3 +1,6 @@
 asgiref
 Django
 sqlparse
+black
+flake8
+coverage
