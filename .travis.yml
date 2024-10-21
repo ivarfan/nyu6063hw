@@ -5,6 +5,8 @@ script:
   - black --check .
   - flake8 --max-line-length=150 .
   - coverage run manage.py test
+after_script:
+  - coveralls
 deploy:
   provider: elasticbeanstalk
   access_key_id: $accesskeyid
@@ -17,5 +19,3 @@ deploy:
     repo: ivarfan/nyu6063hw
     branch: master
   skip_cleanup: 'true'
-after_script:
-  - coveralls
