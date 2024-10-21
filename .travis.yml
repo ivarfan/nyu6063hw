@@ -5,3 +5,15 @@ script:
   - black --check .
   - flake8 --max-line-length=150 .
   - coverage run manage.py test
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: AKIAQZBQKF3GUJSTPOUE
+  secret_access_key: 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
+  region: us-east-1
+  app: mysite
+  env: mysite-dev7
+  bucket_name: elasticbeanstalk-us-east-1-053788421837
+  on:
+    repo: ivarfan/nyu6063hw
+    branch: master
+  skip_cleanup: 'true'
