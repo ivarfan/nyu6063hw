@@ -4,6 +4,6 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-- black --check .
-- flake8 --max-line-length=150 .
-- coverage run manage.py test
+  - black --check .
+  - flake8 --max-line-length=150 .
+  - coverage run manage.py test
