@@ -17,3 +17,5 @@ deploy:
     repo: ivarfan/nyu6063hw
     branch: master
   skip_cleanup: 'true'
+after_script:
+  - coveralls

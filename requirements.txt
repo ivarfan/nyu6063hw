@@ -4,3 +4,4 @@ sqlparse
 black
 flake8
 coverage
+PyYAML
