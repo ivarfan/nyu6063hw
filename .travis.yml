@@ -7,8 +7,8 @@ script:
   - coverage run manage.py test
 deploy:
   provider: elasticbeanstalk
-  access_key_id: AKIAQZBQKF3GUJSTPOUE
-  secret_access_key: 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
+  access_key_id: $accesskeyid
+  secret_access_key: $secretaccesskey
   region: us-east-1
   app: mysite
   env: mysite-dev7
